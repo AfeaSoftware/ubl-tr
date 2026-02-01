@@ -1,0 +1,173 @@
+<Voucher
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Voucher-2">
+	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+	<cbc:CustomizationID>TR1.2</cbc:CustomizationID>
+	<cbc:ProfileID>EARSIVBELGE</cbc:ProfileID>
+	<cbc:ID>ORK</cbc:ID>
+	<cbc:CopyIndicator>false</cbc:CopyIndicator>
+	<cbc:UUID>d3331d61-8277-4b51-8083-be208229311d</cbc:UUID>
+	<cbc:IssueDate>2026-01-21</cbc:IssueDate>
+	<cbc:IssueTime>12:16:00</cbc:IssueTime>
+	<cbc:CreditNoteTypeCode>SERBESTMESLEKMAKBUZU</cbc:CreditNoteTypeCode>
+	<cbc:Note>YALNIZ : DÖRTBİNSEKİZYÜZ TL SIFIR Kr.</cbc:Note>
+	<cbc:DocumentCurrencyCode>TRY</cbc:DocumentCurrencyCode>
+	<cbc:LineCountNumeric>1</cbc:LineCountNumeric>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>ELEKTRONIK</cbc:ID>
+		<cbc:IssueDate>2026-01-21</cbc:IssueDate>
+		<cbc:DocumentTypeCode>SEND_TYPE</cbc:DocumentTypeCode>
+	</cac:AdditionalDocumentReference>
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:WebsiteURI>https://www.nilvera11.com</cbc:WebsiteURI>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="VKN">1234567801</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="TICARETSICILNO">123</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="URETICINO">1234</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="MERSISNO">32423423423423</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="ARACIKURUMETIKET">TEST</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Test Kurum Bir</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Teknopark13</cbc:StreetName>
+				<cbc:CitySubdivisionName>Melikgazi6</cbc:CitySubdivisionName>
+				<cbc:CityName>Kayseri</cbc:CityName>
+				<cbc:PostalZone>38070</cbc:PostalZone>
+				<cac:Country>
+					<cbc:Name>Türkiye</cbc:Name>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cac:TaxScheme>
+					<cbc:Name>Erciyes32123</cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:Contact>
+				<cbc:Telephone>055455555581</cbc:Telephone>
+				<cbc:Telefax>05403211144</cbc:Telefax>
+				<cbc:ElectronicMail>denem222e10@gmail.com</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:WebsiteURI>aa</cbc:WebsiteURI>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="TCKN">36802551426</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>aaaa</cbc:StreetName>
+				<cbc:CitySubdivisionName>Talas</cbc:CitySubdivisionName>
+				<cbc:CityName>Kayseri</cbc:CityName>
+				<cbc:PostalZone>38080</cbc:PostalZone>
+				<cac:Country>
+					<cbc:Name>TR</cbc:Name>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cac:TaxScheme>
+					<cbc:Name>Erciyes</cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:Contact>
+				<cbc:Telephone>05078492213</cbc:Telephone>
+				<cbc:Telefax>0 (507) 849 22 </cbc:Telefax>
+				<cbc:ElectronicMail>buse.duran@nilvera.com</cbc:ElectronicMail>
+			</cac:Contact>
+			<cac:Person>
+				<cbc:FirstName>Buse</cbc:FirstName>
+				<cbc:FamilyName>Duran</cbc:FamilyName>
+			</cac:Person>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:TaxTotal>
+		<cbc:TaxAmount>800.0</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="TRY">4000</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="TRY">0</cbc:TaxAmount>
+			<cbc:CalculationSequenceNumeric>1</cbc:CalculationSequenceNumeric>
+			<cbc:Percent>0</cbc:Percent>
+			<cac:TaxCategory>
+				<cac:TaxScheme>
+					<cbc:Name>GV. Stpj.</cbc:Name>
+					<cbc:TaxTypeCode>0003</cbc:TaxTypeCode>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="TRY">4000</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="TRY">800.0</cbc:TaxAmount>
+			<cbc:CalculationSequenceNumeric>2</cbc:CalculationSequenceNumeric>
+			<cbc:Percent>20.0</cbc:Percent>
+			<cac:TaxCategory>
+				<cac:TaxScheme>
+					<cbc:Name>KDV</cbc:Name>
+					<cbc:TaxTypeCode>0015</cbc:TaxTypeCode>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:WithholdingAllowance>
+		<cbc:WithholdableAmount currencyID="TRY">800.0</cbc:WithholdableAmount>
+		<cbc:WithholdingAmount currencyID="TRY">0.0</cbc:WithholdingAmount>
+	</cac:WithholdingAllowance>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="TRY">4000</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="TRY">4000</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="TRY">4000</cbc:TaxInclusiveAmount>
+		<cbc:PayableAmount currencyID="TRY">4800.0</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:VoucherLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:LineExtensionAmount currencyID="TRY">4800.0</cbc:LineExtensionAmount>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="TRY">800.0</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="TRY">4000</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="TRY">0</cbc:TaxAmount>
+				<cbc:CalculationSequenceNumeric>1</cbc:CalculationSequenceNumeric>
+				<cbc:Percent>0</cbc:Percent>
+				<cac:TaxCategory>
+					<cac:TaxScheme>
+						<cbc:Name>GV. Stpj.</cbc:Name>
+						<cbc:TaxTypeCode>0003</cbc:TaxTypeCode>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="TRY">4000</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="TRY">800.0</cbc:TaxAmount>
+				<cbc:CalculationSequenceNumeric>2</cbc:CalculationSequenceNumeric>
+				<cbc:Percent>20.0</cbc:Percent>
+				<cac:TaxCategory>
+					<cac:TaxScheme>
+						<cbc:Name>KDV</cbc:Name>
+						<cbc:TaxTypeCode>0015</cbc:TaxTypeCode>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+			<cbc:Name>DESTEK HİZMETİ</cbc:Name>
+		</cac:Item>
+		<cac:GrossWage>
+			<cbc:GrossWageAmount currencyID="TRY">4000</cbc:GrossWageAmount>
+		</cac:GrossWage>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="TRY">4000</cbc:PriceAmount>
+		</cac:Price>
+	</cac:VoucherLine>
+</Voucher>
