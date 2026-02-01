@@ -27,6 +27,7 @@ use Afea\UblTr\Models\CommonAggregateComponents\TaxSubtotal;
 use Afea\UblTr\Models\CommonAggregateComponents\TaxTotal;
 use Afea\UblTr\Models\CommonBasicComponents\Amount;
 use Afea\UblTr\Models\CommonBasicComponents\ID;
+use Afea\UblTr\Models\CommonBasicComponents\Note;
 use Afea\UblTr\Models\Nes\NesFreelancerVoucher;
 use Afea\UblTr\Models\Nes\NesFreelancerVoucherLegalMonetaryTotal;
 use Afea\UblTr\Models\Nes\NesFreelancerVoucherLine;
@@ -58,6 +59,11 @@ class NesVoucherMapper implements VoucherMapperInterface
                 $docRef->documentTypeCode = $voucherInfo->additionalDocumentReferenceDocumentTypeCode;
             }
             $voucher->additionalDocumentReference = [$docRef];
+        }
+
+        // Notes
+        if ($voucherInfo->notes) {
+            $voucher->note = array_map(fn($note) => new Note($note), $voucherInfo->notes);
         }
 
         // Supplier Party

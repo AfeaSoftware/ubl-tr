@@ -6,6 +6,7 @@ use Afea\UblTr\Models\CommonAggregateComponents\AccountingCustomerParty;
 use Afea\UblTr\Models\CommonAggregateComponents\AccountingSupplierParty;
 use Afea\UblTr\Models\CommonAggregateComponents\AdditionalDocumentReference;
 use Afea\UblTr\Models\CommonAggregateComponents\TaxTotal;
+use Afea\UblTr\Models\CommonBasicComponents\Note;
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\XmlElement;
@@ -47,6 +48,11 @@ class NesFreelancerVoucher
     #[Type("array<Afea\UblTr\Models\CommonAggregateComponents\AdditionalDocumentReference>")]
     #[XmlList(inline: true, entry: "cac:AdditionalDocumentReference")]
     public ?array $additionalDocumentReference = null;
+
+    #[SerializedName("cbc:Note")]
+    #[Type("array<Afea\UblTr\Models\CommonBasicComponents\Note>")]
+    #[XmlList(inline: true, entry: "cbc:Note")]
+    public ?array $note = null;
 
     #[SerializedName("AccountingSupplierParty")]
     #[Type(AccountingSupplierParty::class)]
