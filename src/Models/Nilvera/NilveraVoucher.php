@@ -67,6 +67,11 @@ class NilveraVoucher
     #[XmlElement(namespace: "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", cdata: false)]
     public ?string $issueTime = null;
 
+    #[SerializedName("cbc:Note")]
+    #[Type("array<Afea\UblTr\Models\CommonBasicComponents\Note>")]
+    #[XmlList(inline: true, entry: "cbc:Note")]
+    public ?array $note = null;
+
     #[SerializedName("CreditNoteTypeCode")]
     #[Type("string")]
     #[XmlElement(namespace: "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", cdata: false)]
@@ -81,11 +86,6 @@ class NilveraVoucher
     #[Type("int")]
     #[XmlElement(namespace: "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", cdata: false)]
     public int $lineCountNumeric;
-
-    #[SerializedName("cbc:Note")]
-    #[Type("array<Afea\UblTr\Models\CommonBasicComponents\Note>")]
-    #[XmlList(inline: true, entry: "cbc:Note")]
-    public ?array $note = null;
 
     #[SerializedName("cac:AdditionalDocumentReference")]
     #[Type("array<Afea\UblTr\Models\CommonAggregateComponents\AdditionalDocumentReference>")]

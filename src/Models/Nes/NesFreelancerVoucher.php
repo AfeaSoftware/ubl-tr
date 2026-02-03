@@ -39,6 +39,11 @@ class NesFreelancerVoucher
     #[XmlElement(namespace: "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", cdata: false)]
     public ?string $issueTime = null;
 
+    #[SerializedName("cbc:Note")]
+    #[Type("array<Afea\UblTr\Models\CommonBasicComponents\Note>")]
+    #[XmlList(inline: true, entry: "cbc:Note")]
+    public ?array $note = null;
+
     #[SerializedName("DocumentCurrencyCode")]
     #[Type("string")]
     #[XmlElement(namespace: "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", cdata: false)]
@@ -48,11 +53,6 @@ class NesFreelancerVoucher
     #[Type("array<Afea\UblTr\Models\CommonAggregateComponents\AdditionalDocumentReference>")]
     #[XmlList(inline: true, entry: "cac:AdditionalDocumentReference")]
     public ?array $additionalDocumentReference = null;
-
-    #[SerializedName("cbc:Note")]
-    #[Type("array<Afea\UblTr\Models\CommonBasicComponents\Note>")]
-    #[XmlList(inline: true, entry: "cbc:Note")]
-    public ?array $note = null;
 
     #[SerializedName("AccountingSupplierParty")]
     #[Type(AccountingSupplierParty::class)]
